@@ -97,6 +97,7 @@ class _DetailUserScreenState extends State<DetailUserScreen> {
               const SizedBox(
                 height: 30,
               ),
+
               Expanded(
                 child: Center(
                   child: BlocBuilder<PostUserCubit, PostUserState>(
@@ -131,7 +132,7 @@ class _DetailUserScreenState extends State<DetailUserScreen> {
                                         SizedBox(
                                           width: 150,
                                           child: Text(
-                                            itemsPost.body,
+                                            itemsPost.title,
                                             maxLines: 5,
                                           ),
                                         ),
@@ -155,6 +156,7 @@ class _DetailUserScreenState extends State<DetailUserScreen> {
                   ),
                 ),
               ),
+
               const SizedBox(height: 15,),
               Expanded(
                 child: Center(
